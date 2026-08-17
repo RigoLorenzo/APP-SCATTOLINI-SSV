@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Report Settimanale – SSV Manager</title>
+  <style>
+    body { margin:0; padding:0; background-color:#f3f4f6; font-family:Arial,Helvetica,sans-serif; -webkit-text-size-adjust:100%; }
+    table { border-collapse:collapse; mso-table-lspace:0; mso-table-rspace:0; }
+
+    .wrapper   { width:100%; background-color:#f3f4f6; padding:24px 0; }
+    .container { width:680px; max-width:100%; margin:0 auto; background-color:#ffffff;
+                 border-radius:8px; overflow:hidden; box-shadow:0 2px 12px rgba(0,0,0,.12); }
+
+    /* Header */
+    .header    { background:linear-gradient(135deg,#7f1d1d 0%,#b91c1c 100%); padding:24px 32px; }
+    .header-title { color:#ffffff; font-size:20px; font-weight:700; margin:0 0 4px 0; }
+    .header-sub   { color:#fca5a5; font-size:13px; margin:0; }
+
+    /* Summary chips */
+    .summary { background:#fef2f2; padding:16px 32px; border-bottom:1px solid #fecaca; }
+    .chip    { display:inline-block; padding:6px 14px; border-radius:99px; font-size:12px; font-weight:700;
+               margin-right:8px; margin-bottom:4px; }
+    .chip-red   { background:#fee2e2; color:#991b1b; border:1px solid #fca5a5; }
+    .chip-amber { background:#fef3c7; color:#92400e; border:1px solid #fde68a; }
+
+    /* Section */
+    .section        { padding:20px 32px 0; }
+    .section-title  { font-size:13px; font-weight:700; text-transform:uppercase; letter-spacing:1px;
+                      padding:8px 14px; border-radius:4px 4px 0 0; margin:0; }
+    .title-red      { background:#b91c1c; color:#fff; }
+    .title-amber    { background:#d97706; color:#fff; }
+
+    /* Data table */
+    .data-table     { width:100%; border:1px solid #e5e7eb; border-top:none; margin-bottom:24px;
+                      font-size:12px; }
+    .data-table th  { background:#f9fafb; color:#374151; font-size:11px; text-transform:uppercase;
+                      letter-spacing:.8px; padding:8px 10px; border-bottom:2px solid #e5e7eb;
+                      text-align:left; }
+    .data-table td  { padding:8px 10px; color:#111827; vertical-align:top;
+                      border-bottom:1px solid #f3f4f6; }
+    .data-table tr:last-child td { border-bottom:none; }
+    .data-table tr:nth-child(even) td { background:#fafafa; }
+    .badge          { display:inline-block; padding:2px 8px; border-radius:4px; font-size:10px; font-weight:700; }
+    .badge-green    { background:#d1fae5; color:#065f46; }
+    .badge-red      { background:#fee2e2; color:#991b1b; }
+    .badge-gray     { background:#f3f4f6; color:#6b7280; }
+    .empty-row td   { text-align:center; color:#9ca3af; padding:16px; font-style:italic; }
+
+    /* Footer */
+    .footer { background:#f9fafb; border-top:1px solid #e5e7eb; padding:16px 32px;
+              text-align:center; font-size:11px; color:#9ca3af; }
+
+    @media only screen and (max-width:680px) {
+      .container { width:100% !important; border-radius:0 !important; }
+      .section   { padding:16px !important; }
+      .summary   { padding:12px 16px !important; }
+      .header    { padding:16px !important; }
+      .data-table th, .data-table td { font-size:11px; padding:6px 8px; }
+      .col-hide  { display:none !important; }
+    }
+  </style>
+</head>
+<body>
+<div class="wrapper">
+  <table width="100%" cellpadding="0" cellspacing="0">
+    <tr><td align="center">
+      <table class="container" cellpadding="0" cellspacing="0">
+
+        <!-- HEADER -->
+        <tr><td class="header">
+          <p class="header-title">📋 Report Settimanale SSV Manager</p>
+          <p class="header-sub">Generato il {{DATA_GENERAZIONE}} · Scattolini S.p.A.</p>
+        </td></tr>
+
+        <!-- SUMMARY -->
+        <tr><td class="summary">
+          <span class="chip chip-red">🔴 {{NUM_NO_COC}} senza COC ricevuto</span>
+          <span class="chip chip-amber">🟡 {{NUM_NO_PAGAMENTO}} pagamento non ricevuto</span>
+        </td></tr>
+
+        <!-- SEZIONE 1: COC NON RICEVUTO -->
+        <tr><td class="section">
+          <p class="section-title title-red">COC Fase 1 non ricevuto ({{NUM_NO_COC}} veicoli)</p>
+          <table class="data-table" cellpadding="0" cellspacing="0">
+            <thead>
+              <tr>
+                <th>Committente</th>
+                <th class="col-hide">N° Telaio</th>
+                <th>Ordine SAP</th>
+                <th>Tipo</th>
+                <th>Stato</th>
+                <th>Consegna</th>
+              </tr>
+            </thead>
+            <tbody>
+              {{ROWS_NO_COC}}
+            </tbody>
+          </table>
+        </td></tr>
+
+        <!-- SEZIONE 2: PAGAMENTO NON RICEVUTO -->
+        <tr><td class="section">
+          <p class="section-title title-amber">Pagamento documenti non ricevuto ({{NUM_NO_PAGAMENTO}} veicoli)</p>
+          <table class="data-table" cellpadding="0" cellspacing="0">
+            <thead>
+              <tr>
+                <th>Committente</th>
+                <th class="col-hide">N° Telaio</th>
+                <th>Ordine SAP</th>
+                <th>Tipo</th>
+                <th>Stato</th>
+                <th>Consegna</th>
+              </tr>
+            </thead>
+            <tbody>
+              {{ROWS_NO_PAGAMENTO}}
+            </tbody>
+          </table>
+        </td></tr>
+
+        <!-- FOOTER -->
+        <tr><td class="footer">
+          <p style="margin:0 0 4px 0;">SSV Manager – Gestione Veicoli e Allestimenti – Scattolini S.p.A.</p>
+          <p style="margin:0;">Report automatico inviato ogni lunedì. Per disabilitarlo accedi alle Impostazioni → Notifiche Email.</p>
+        </td></tr>
+
+      </table>
+    </td></tr>
+  </table>
+</div>
+</body>
+</html>

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Veicolo Pronto – {{ORDINE_SAP}} – {{COMMITTENTE}}</title>
+  <style>
+    body { margin: 0; padding: 0; background-color: #f3f4f6; font-family: Arial, Helvetica, sans-serif; -webkit-text-size-adjust: 100%; }
+    table { border-collapse: collapse; mso-table-lspace: 0; mso-table-rspace: 0; }
+    img { border: 0; display: block; max-width: 100%; }
+    a { color: #b91c1c; }
+
+    .wrapper   { width: 100%; background-color: #f3f4f6; padding: 24px 0; }
+    .container { width: 620px; max-width: 100%; margin: 0 auto; background-color: #ffffff;
+                 border-radius: 8px; overflow: hidden; box-shadow: 0 2px 12px rgba(0,0,0,0.1); }
+
+    .section-header { padding: 8px 14px; border-radius: 4px 4px 0 0; }
+    .section-header p { margin: 0; font-size: 11px; font-weight: 700; text-transform: uppercase;
+                        letter-spacing: 1.2px; color: #ffffff; }
+    .section-body { border: 1px solid #e5e7eb; border-top: none; padding: 14px 16px;
+                    border-radius: 0 0 4px 4px; }
+    .row-label { color: #6b7280; font-size: 12px; width: 42%; vertical-align: top; padding: 5px 4px; }
+    .row-value { color: #111827; font-size: 12px; font-weight: 600; vertical-align: top; padding: 5px 4px; }
+    .row-alt { background-color: #f9fafb; }
+
+    @media only screen and (max-width: 620px) {
+      .container { width: 100% !important; border-radius: 0 !important; }
+      .pad32 { padding-left: 16px !important; padding-right: 16px !important; }
+      .hero-split td { display: block !important; width: 100% !important; }
+      .hero-badge { margin-top: 10px !important; }
+      .dates-grid td { display: block !important; width: 100% !important;
+                       padding-bottom: 8px !important; }
+    }
+  </style>
+</head>
+<body>
+<div class="wrapper">
+<table width="100%" cellpadding="0" cellspacing="0" role="presentation">
+  <tr>
+    <td align="center">
+      <table class="container" cellpadding="0" cellspacing="0" role="presentation">
+
+        <!-- ── HEADER ─────────────────────────────────────────────────────── -->
+        <tr>
+          <td style="background: linear-gradient(135deg, #991b1b 0%, #7f1d1d 100%); padding: 28px 32px; text-align: center;">
+            <p style="margin: 0 0 6px; color: #fca5a5; font-size: 11px; text-transform: uppercase; letter-spacing: 2px; font-weight: 600;">SSV Manager · Scattolini</p>
+            <h1 style="margin: 0; color: #ffffff; font-size: 26px; font-weight: 700; letter-spacing: -0.5px;">
+              &#x1F698; Veicolo Pronto per il Ritiro
+            </h1>
+            <p style="margin: 8px 0 0; color: #fecaca; font-size: 13px;">Notifica automatica · Allestimento completato</p>
+          </td>
+        </tr>
+
+        <!-- ── HERO INFO ──────────────────────────────────────────────────── -->
+        <tr>
+          <td style="background-color: #fef2f2; border-bottom: 3px solid #b91c1c; padding: 20px 32px;" class="pad32">
+            <table width="100%" cellpadding="0" cellspacing="0" class="hero-split">
+              <tr>
+                <td style="vertical-align: middle;">
+                  <p style="margin: 0 0 3px; color: #9ca3af; font-size: 10px; text-transform: uppercase; letter-spacing: 1px; font-weight: 600;">Committente</p>
+                  <p style="margin: 0; color: #111827; font-size: 22px; font-weight: 700; line-height: 1.2;">{{COMMITTENTE}}</p>
+                </td>
+                <td align="right" style="vertical-align: middle;" class="hero-badge">
+                  <span style="display: inline-block; background-color: #16a34a; color: #ffffff; padding: 7px 16px; border-radius: 20px; font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; white-space: nowrap;">&#x2713; PRONTO</span>
+                </td>
+              </tr>
+            </table>
+            <!-- Quick reference row -->
+            <table width="100%" cellpadding="0" cellspacing="0" style="margin-top: 14px; border-top: 1px solid #fecaca; padding-top: 14px;" class="dates-grid">
+              <tr>
+                <td width="33%" style="padding-right: 8px;">
+                  <p style="margin: 0 0 2px; color: #9ca3af; font-size: 10px; font-weight: 600; text-transform: uppercase;">N° Ordine SAP</p>
+                  <p style="margin: 0; color: #1f2937; font-size: 14px; font-weight: 700; font-family: 'Courier New', monospace;">{{ORDINE_SAP}}</p>
+                </td>
+                <td width="33%" style="padding-right: 8px;">
+                  <p style="margin: 0 0 2px; color: #9ca3af; font-size: 10px; font-weight: 600; text-transform: uppercase;">N° Telaio</p>
+                  <p style="margin: 0; color: #1f2937; font-size: 14px; font-weight: 700; font-family: 'Courier New', monospace;">{{NUMERO_TELAIO}}</p>
+                </td>
+                <td width="33%">
+                  <p style="margin: 0 0 2px; color: #9ca3af; font-size: 10px; font-weight: 600; text-transform: uppercase;">Data Consegna</p>
+                  <p style="margin: 0; color: #b91c1c; font-size: 14px; font-weight: 700;">{{DATA_CONSEGNA}}</p>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <!-- ── BODY SECTIONS ─────────────────────────────────────────────── -->
+        <tr>
+          <td style="padding: 24px 32px 0;" class="pad32">
+
+            <!-- SEZIONE: Informazioni Generali -->
+            <table width="100%" cellpadding="0" cellspacing="0" style="margin-bottom: 16px;">
+              <tr><td class="section-header" style="background-color: #1f2937;">
+                <p>&#x1F4CB; Informazioni Generali</p>
+              </td></tr>
+              <tr><td class="section-body">
+                <table width="100%" cellpadding="0" cellspacing="0">
+                  <tr><td class="row-label">Tipo Allestimento</td><td class="row-value">{{TIPO_ALLESTIMENTO}}</td></tr>
+                  <tr class="row-alt"><td class="row-label">Allestimento</td><td class="row-value">{{DESCRIZIONE_ALLESTIMENTO}}</td></tr>
+                  <tr><td class="row-label">Codice Allest. SAP</td><td class="row-value" style="font-family: 'Courier New', monospace;">{{CODICE_ALLESTIMENTO_SAP}}</td></tr>
+                  <tr class="row-alt"><td class="row-label">Descrizione Allest. SAP</td><td class="row-value">{{DESCRIZIONE_ALLESTIMENTO_SAP}}</td></tr>
+                  <tr><td class="row-label">N° Matricola</td><td class="row-value" style="font-family: 'Courier New', monospace;">{{NUMERO_MATRICOLA}}</td></tr>
+                  <tr class="row-alt"><td class="row-label">N° Matricola Liderkit</td><td class="row-value" style="font-family: 'Courier New', monospace;">{{NUMERO_MATRICOLA_LIDERKIT}}</td></tr>
+                  <tr><td class="row-label">Codice Inventario</td><td class="row-value" style="font-family: 'Courier New', monospace;">{{CODICE_INVENTARIO}}</td></tr>
+                </table>
+              </td></tr>
+            </table>
+
+            <!-- SEZIONE: Date -->
+            <table width="100%" cellpadding="0" cellspacing="0" style="margin-bottom: 16px;">
+              <tr><td class="section-header" style="background-color: #1e40af;">
+                <p>&#x1F4C5; Date Importanti</p>
+              </td></tr>
+              <tr><td class="section-body">
+                <table width="100%" cellpadding="0" cellspacing="0">
+                  <tr><td class="row-label">Data Arrivo</td><td class="row-value">{{DATA_ARRIVO}}</td></tr>
+                  <tr class="row-alt"><td class="row-label">Data Consegna</td><td class="row-value" style="color: #b91c1c;">{{DATA_CONSEGNA}}</td></tr>
+                  <tr><td class="row-label">Data Montaggio</td><td class="row-value">{{DATA_MONTAGGIO}}</td></tr>
+                  <tr class="row-alt"><td class="row-label">Data Prevista Montaggio</td><td class="row-value">{{DATA_PREVISTA_MONTAGGIO}}</td></tr>
+                </table>
+              </td></tr>
+            </table>
+
+            <!-- SEZIONE: Allestimento -->
+            <table width="100%" cellpadding="0" cellspacing="0" style="margin-bottom: 16px;">
+              <tr><td class="section-header" style="background-color: #0f766e;">
+                <p>&#x1F527; Allestimento</p>
+              </td></tr>
+              <tr><td class="section-body">
+                <table width="100%" cellpadding="0" cellspacing="0">
+                  <tr><td class="row-label">Codice Allestimento</td><td class="row-value" style="font-family: 'Courier New', monospace;">{{CODICE_ALLESTIMENTO}}</td></tr>
+                  <tr class="row-alt"><td class="row-label">Con Sponda Caricatrice</td><td class="row-value">{{CON_SPONDA_CARICATRICE}}</td></tr>
+                  <tr><td class="row-label">Marca Sponda</td><td class="row-value">{{MARCA_SPONDA}}</td></tr>
+                  <tr class="row-alt"><td class="row-label">Matricola Sponda</td><td class="row-value" style="font-family: 'Courier New', monospace;">{{MATRICOLA_SPONDA}}</td></tr>
+                  <tr><td class="row-label">Week Spedizione Kit</td><td class="row-value">{{WEEK_SPEDIZIONE_KIT}}</td></tr>
+                </table>
+              </td></tr>
+            </table>
+
+            <!-- SEZIONE: Collaudo -->
+            <table width="100%" cellpadding="0" cellspacing="0" style="margin-bottom: 16px;">
+              <tr><td class="section-header" style="background-color: #6d28d9;">
+                <p>&#x1F50D; Collaudo</p>
+              </td></tr>
+              <tr><td class="section-body">
+                <table width="100%" cellpadding="0" cellspacing="0">
+                  <tr><td class="row-label">Stato Collaudo</td><td class="row-value">{{COLLAUDO}}</td></tr>
+                  <tr class="row-alt"><td class="row-label">Data Collaudo</td><td class="row-value">{{DATA_COLLAUDO}}</td></tr>
+                  <tr><td class="row-label">Omologazione</td><td class="row-value">{{OMOLOGAZIONE_COLLAUDO}}</td></tr>
+                  <tr class="row-alt"><td class="row-label">COC Fase 1</td><td class="row-value">{{COC_FASE_1}}</td></tr>
+                </table>
+              </td></tr>
+            </table>
+
+            <!-- SEZIONE: Ritiro e Consegna -->
+            <table width="100%" cellpadding="0" cellspacing="0" style="margin-bottom: 16px;">
+              <tr><td class="section-header" style="background-color: #b45309;">
+                <p>&#x1F69A; Ritiro e Consegna</p>
+              </td></tr>
+              <tr><td class="section-body">
+                <table width="100%" cellpadding="0" cellspacing="0">
+                  <tr><td class="row-label">Modalit&agrave; Ritiro</td><td class="row-value">{{MODALITA_RITIRO}}</td></tr>
+                  <tr class="row-alt"><td class="row-label">Data Ritiro</td><td class="row-value" style="color: #b91c1c;">{{DATA_RITIRO}}</td></tr>
+                  <tr><td class="row-label">Ora Appt. Montaggio</td><td class="row-value">{{ORA_MONTAGGIO}}</td></tr>
+                  <tr class="row-alt"><td class="row-label">Tipo Consegna</td><td class="row-value">{{TIPO_CONSEGNA}}</td></tr>
+                  <tr><td class="row-label">Indirizzo Consegna</td><td class="row-value">{{INDIRIZZO_CONSEGNA}}</td></tr>
+                  <tr class="row-alt"><td class="row-label">Cliente Avvisato</td><td class="row-value">{{CLIENTE_AVVISATO}}</td></tr>
+                  <tr><td class="row-label">Ritiro Giorno</td><td class="row-value">{{RITIRO_GIORNO}}</td></tr>
+                  <tr class="row-alt"><td class="row-label">Posizione Parcheggio</td><td class="row-value">{{POSIZIONE_PARCHEGGIO}}</td></tr>
+                  <tr><td class="row-label">Chiavi Doppio Parcheggio</td><td class="row-value">{{CHIAVI_DOPPIO_PARCHEGGIO}}</td></tr>
+                  <tr class="row-alt"><td class="row-label">Note Ritiro</td><td class="row-value">{{NOTE_RITIRO}}</td></tr>
+                </table>
+              </td></tr>
+            </table>
+
+            <!-- SEZIONE: Documenti -->
+            <table width="100%" cellpadding="0" cellspacing="0" style="margin-bottom: 16px;">
+              <tr><td class="section-header" style="background-color: #0369a1;">
+                <p>&#x1F4C4; Documenti</p>
+              </td></tr>
+              <tr><td class="section-body">
+                <table width="100%" cellpadding="0" cellspacing="0">
+                  <tr><td class="row-label">Pagamento Documenti</td><td class="row-value">{{PAGAMENTO_DOCUMENTI}}</td></tr>
+                  <tr class="row-alt"><td class="row-label">Note Pagamento</td><td class="row-value">{{NOTE_PAGAMENTO}}</td></tr>
+                  <tr><td class="row-label">Documenti Mandati</td><td class="row-value">{{DOCUMENTI_MANDATI}}</td></tr>
+                  <tr class="row-alt"><td class="row-label">Data Spedizione Doc.</td><td class="row-value">{{DATA_SPEDIZIONE_DOCUMENTI}}</td></tr>
+                </table>
+              </td></tr>
+            </table>
+
+            <!-- SEZIONE: Note Generali -->
+            <table width="100%" cellpadding="0" cellspacing="0" style="margin-bottom: 24px;">
+              <tr><td class="section-header" style="background-color: #374151;">
+                <p>&#x1F4DD; Note Generali</p>
+              </td></tr>
+              <tr><td class="section-body">
+                <p style="margin: 0; color: #374151; font-size: 13px; line-height: 1.6; white-space: pre-wrap;">{{NOTE}}</p>
+              </td></tr>
+            </table>
+
+          </td>
+        </tr>
+
+        <!-- ── FOOTER ─────────────────────────────────────────────────────── -->
+        <tr>
+          <td style="background-color: #f9fafb; border-top: 2px solid #e5e7eb; padding: 18px 32px; text-align: center;" class="pad32">
+            <p style="margin: 0 0 4px; color: #6b7280; font-size: 12px;">Email generata automaticamente da <strong>SSV Manager</strong></p>
+            <p style="margin: 0 0 4px; color: #9ca3af; font-size: 11px;">Inviata il {{INVIATO_IL}} &nbsp;|&nbsp; ID Veicolo: <span style="font-family: 'Courier New', monospace;">{{VEHICLE_ID}}</span></p>
+            <p style="margin: 0; color: #d1d5db; font-size: 10px;">Non rispondere a questa email. Per supporto contattare l&apos;amministratore del sistema.</p>
+          </td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+</table>
+</div>
+</body>
+</html>

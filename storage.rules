@@ -1,0 +1,43 @@
+rules_version = '2';
+service firebase.storage {
+  match /b/{bucket}/o {
+    // Funzione helper per verificare che l'utente sia autenticato
+    function isAuthenticated() {
+      return request.auth != null;
+    }
+
+    // Funzione helper per verificare che l'utente NON sia read-only
+    // Nota: Storage rules non possono accedere a Firestore, quindi usiamo custom claims
+    // Per ora manteniamo la protezione base con autenticazione.
+    // Per protezione completa, configurare custom claims via Firebase Admin SDK.
+
+    // Cartella veicoli - solo utenti autenticati possono caricare/leggere/eliminare
+    match /veicoli/{allPaths=**} {
+      allow read: if isAuthenticated();
+      allow write: if isAuthenticated()
+                    && request.resource.size < 10 * 1024 * 1024; // Max 10MB per file
+      allow delete: if isAuthenticated();
+    }
+
+    // Cartella telai - solo utenti autenticati possono caricare/leggere/eliminare
+    match /telai/{allPaths=**} {
+      allow read: if isAuthenticated();
+      allow write: if isAuthenticated()
+                    && request.resource.size < 10 * 1024 * 1024; // Max 10MB per file
+      allow delete: if isAuthenticated();
+    }
+
+    // Cartella documenti COC - solo utenti autenticati
+    match /coc/{allPaths=**} {
+      allow read: if isAuthenticated();
+      allow write: if isAuthenticated()
+                    && request.resource.size < 10 * 1024 * 1024; // Max 10MB per file
+      allow delete: if isAuthenticated();
+    }
+
+    // Blocca tutto il resto
+    match /{allPaths=**} {
+      allow read, write: if false;
+    }
+  }
+}

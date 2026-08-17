@@ -1,0 +1,120 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // Funzione helper per verificare che l'utente sia autenticato
+    function isAuthenticated() {
+      return request.auth != null;
+    }
+
+    // Funzione helper per ottenere il ruolo dell'utente
+    function getUserRole() {
+      return get(/databases/$(database)/documents/users/$(request.auth.uid)).data.role;
+    }
+
+    // Funzione helper per verificare che l'utente NON sia read-only
+    function canWrite() {
+      return isAuthenticated() && getUserRole() != 'non_operativo';
+    }
+
+    // Funzione helper per verificare che l'utente sia admin
+    function isAdmin() {
+      return isAuthenticated() && getUserRole() == 'admin';
+    }
+
+    // Campi riservati agli admin
+    function adminFields() {
+      return ['numeroBollaConsegna', 'non', 'nomeDealer', 'codiceDealer', 'codiceFord', 'codiceSCV', 'notePrezzo', 'ddtOkOkFgerace'];
+    }
+
+    // Verifica che i campi admin non siano stati modificati (per update da non-admin)
+    function adminFieldsUnchanged() {
+      return !request.resource.data.diff(resource.data).affectedKeys().hasAny(adminFields());
+    }
+
+    // Verifica che i campi admin siano vuoti (per create da non-admin)
+    function adminFieldsEmptyOnCreate() {
+      let d = request.resource.data;
+      return d.get('numeroBollaConsegna', '') == ''
+          && d.get('non', '') == ''
+          && d.get('nomeDealer', '') == ''
+          && d.get('codiceDealer', '') == ''
+          && d.get('codiceFord', '') == ''
+          && d.get('codiceSCV', '') == ''
+          && d.get('notePrezzo', '') == ''
+          && d.get('ddtOkOkFgerace', '') == '';
+    }
+
+    // Collezione users - gestione ruoli
+    match /users/{userId} {
+      allow read: if isAuthenticated();
+      allow create: if isAuthenticated() && request.auth.uid == userId;
+      allow update: if isAdmin();
+      allow delete: if false;
+    }
+
+    // Collezione veicoli - read per tutti, write solo per operativi/admin
+    match /veicoli/{vehicleId} {
+      allow read: if isAuthenticated();
+      allow create: if canWrite() && (isAdmin() || adminFieldsEmptyOnCreate());
+      allow update: if canWrite() && (isAdmin() || adminFieldsUnchanged());
+      allow delete: if canWrite();
+    }
+
+    // Collezione telai - read per tutti, write solo per operativi/admin
+    match /telai/{telaiId} {
+      allow read: if isAuthenticated();
+      allow create: if canWrite();
+      allow update: if canWrite();
+      allow delete: if canWrite();
+    }
+
+    // Collezione kits - read per tutti, write solo per operativi/admin
+    match /kits/{kitId} {
+      allow read: if isAuthenticated();
+      allow create: if canWrite();
+      allow update: if canWrite();
+      allow delete: if canWrite();
+    }
+
+    // Collezione messaggi chat - read per tutti, write solo per operativi/admin
+    match /messages/{messageId} {
+      allow read: if isAuthenticated();
+      allow create: if canWrite()
+                    && request.resource.data.userName is string
+                    && request.resource.data.message is string;
+      allow update: if false; // I messaggi non possono essere modificati
+      allow delete: if canWrite();
+    }
+
+    // Collezione azioni/log - read per tutti, write solo per operativi/admin
+    match /actions/{actionId} {
+      allow read: if isAuthenticated();
+      allow create: if canWrite()
+                    && request.resource.data.userName is string
+                    && request.resource.data.action is string;
+      allow update: if false; // I log non possono essere modificati
+      allow delete: if false; // I log non possono essere eliminati
+    }
+
+    // Collezione posti parcheggio - read per tutti, write solo per operativi/admin
+    match /parkingSpots/{spotId} {
+      allow read: if isAuthenticated();
+      allow create: if canWrite();
+      allow update: if canWrite();
+      allow delete: if canWrite();
+    }
+
+    // Collezione config - read per tutti gli autenticati, write solo admin
+    // Contiene: emailNotifications, weeklyReport (destinatari notifiche)
+    match /config/{docId} {
+      allow read: if isAuthenticated();
+      allow write: if isAdmin();
+    }
+
+    // Blocca tutto il resto
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}

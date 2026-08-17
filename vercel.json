@@ -1,0 +1,7 @@
+{
+  "functions": {
+    "api/sendVehicleReady.js": {
+      "includeFiles": "api/templates/**"
+    }
+  }
+}

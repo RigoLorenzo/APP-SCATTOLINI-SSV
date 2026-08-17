@@ -1,0 +1,35 @@
+{
+  "indexes": [
+    {
+      "collectionGroup": "veicoli",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "status", "order": "ASCENDING" },
+        { "fieldPath": "dataConsegna", "order": "ASCENDING" }
+      ]
+    },
+    {
+      "collectionGroup": "veicoli",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "committente", "order": "ASCENDING" },
+        { "fieldPath": "dataConsegna", "order": "ASCENDING" }
+      ]
+    },
+    {
+      "collectionGroup": "messages",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "timestamp", "order": "DESCENDING" }
+      ]
+    },
+    {
+      "collectionGroup": "actions",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "timestamp", "order": "DESCENDING" }
+      ]
+    }
+  ],
+  "fieldOverrides": []
+}

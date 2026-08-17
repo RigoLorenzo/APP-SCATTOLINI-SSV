@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="635.4pt" height="301.681813pt" viewBox="0 0 635.4 301.681813" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-07-05T22:10:15.723497</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.11.0, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 301.681813 
+L 635.4 301.681813 
+L 635.4 0 
+L 0 0 
+z
+" style="fill: #fcfcfb"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 233.211396 146.737813 
+Q 263.295855 146.737813 291.144246 146.737813 
+" clip-path="url(#p20e71406ee)" style="fill: none; stroke: #0b0b0b; stroke-width: 2; stroke-linecap: round"/>
+    <path d="M 285.544246 143.937813 
+L 291.144246 146.737813 
+L 285.544246 149.537813 
+z
+" clip-path="url(#p20e71406ee)" style="fill: #0b0b0b; stroke: #0b0b0b; stroke-width: 2; stroke-linecap: round"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 36.468 235.441813 
+L 219.492 235.441813 
+Q 222.84 235.441813 222.84 232.115413 
+L 222.84 61.360212 
+Q 222.84 58.033813 219.492 58.033813 
+L 36.468 58.033813 
+Q 33.12 58.033813 33.12 61.360212 
+L 33.12 232.115413 
+Q 33.12 235.441813 36.468 235.441813 
+z
+" clip-path="url(#p20e71406ee)" style="fill: #fdecec; stroke: #d03b3b; stroke-width: 1.8; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 10.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #d03b3b" x="127.98" y="44.173813" transform="rotate(-0 127.98 44.173813)">prima — 17 mar</text>
+   </g>
+   <g id="text_2">
+    <text style="font-style: italic; font-size: 8.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #898781" x="261.9" y="132.877813" transform="rotate(-0 261.9 132.877813)">4373815</text>
+   </g>
+   <g id="patch_4">
+    <path d="M 315.468 94.069813 
+L 439.902 94.069813 
+Q 443.25 94.069813 443.25 90.743413 
+L 443.25 39.184213 
+Q 443.25 35.857813 439.902 35.857813 
+L 315.468 35.857813 
+Q 312.12 35.857813 312.12 39.184213 
+L 312.12 90.743413 
+Q 312.12 94.069813 315.468 94.069813 
+z
+" clip-path="url(#p20e71406ee)" style="fill: #ffffff; stroke: #2a78d6; stroke-width: 1.8; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 454.968 94.069813 
+L 579.402 94.069813 
+Q 582.75 94.069813 582.75 90.743413 
+L 582.75 39.184213 
+Q 582.75 35.857813 579.402 35.857813 
+L 454.968 35.857813 
+Q 451.62 35.857813 451.62 39.184213 
+L 451.62 90.743413 
+Q 451.62 94.069813 454.968 94.069813 
+z
+" clip-path="url(#p20e71406ee)" style="fill: #ffffff; stroke: #1baf7a; stroke-width: 1.8; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 315.468 171.685813 
+L 439.902 171.685813 
+Q 443.25 171.685813 443.25 168.359413 
+L 443.25 116.800213 
+Q 443.25 113.473813 439.902 113.473813 
+L 315.468 113.473813 
+Q 312.12 113.473813 312.12 116.800213 
+L 312.12 168.359413 
+Q 312.12 171.685813 315.468 171.685813 
+z
+" clip-path="url(#p20e71406ee)" style="fill: #ffffff; stroke: #1baf7a; stroke-width: 1.8; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 454.968 171.685813 
+L 579.402 171.685813 
+Q 582.75 171.685813 582.75 168.359413 
+L 582.75 116.800213 
+Q 582.75 113.473813 579.402 113.473813 
+L 454.968 113.473813 
+Q 451.62 113.473813 451.62 116.800213 
+L 451.62 168.359413 
+Q 451.62 171.685813 454.968 171.685813 
+z
+" clip-path="url(#p20e71406ee)" style="fill: #ffffff; stroke: #4a3aa7; stroke-width: 1.8; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 315.468 249.301813 
+L 439.902 249.301813 
+Q 443.25 249.301813 443.25 245.975413 
+L 443.25 194.416213 
+Q 443.25 191.089813 439.902 191.089813 
+L 315.468 191.089813 
+Q 312.12 191.089813 312.12 194.416213 
+L 312.12 245.975413 
+Q 312.12 249.301813 315.468 249.301813 
+z
+" clip-path="url(#p20e71406ee)" style="fill: #ffffff; stroke: #4a3aa7; stroke-width: 1.8; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_3">
+    <text style="font-weight: 700; font-size: 10.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #1baf7a" x="490.68" y="44.173813" transform="rotate(-0 490.68 44.173813)">dopo — 25 mar</text>
+   </g>
+   <g id="text_4">
+    <text style="font-weight: 700; font-size: 14px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #0b0b0b" x="10.8" y="21.997813" transform="rotate(-0 10.8 21.997813)">Un solo punto di verità nel codice, non solo nell'interfaccia</text>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 9.6px; font-family: 'DejaVu Sans'; fill: #0b0b0b" transform="translate(110.4015 84.586813)">App.jsx</text>
+    <text style="font-size: 9.6px; font-family: 'DejaVu Sans'; fill: #0b0b0b" transform="translate(127.98 94.897813)"/>
+    <text style="font-size: 9.6px; font-family: 'DejaVu Sans'; fill: #0b0b0b" transform="translate(97.86675 110.506813)">~2000 righe</text>
+    <text style="font-size: 9.6px; font-family: 'DejaVu Sans'; fill: #0b0b0b" transform="translate(127.98 120.817813)"/>
+    <text style="font-size: 9.6px; font-family: 'DejaVu Sans'; fill: #0b0b0b" transform="translate(79.47375 136.426813)">stato di navigazione</text>
+    <text style="font-size: 9.6px; font-family: 'DejaVu Sans'; fill: #0b0b0b" transform="translate(87.777 150.316813)">listener Firestore</text>
+    <text style="font-size: 9.6px; font-family: 'DejaVu Sans'; fill: #0b0b0b" transform="translate(98.3265 162.346813)">logica CRUD</text>
+    <text style="font-size: 9.6px; font-family: 'DejaVu Sans'; fill: #0b0b0b" transform="translate(89.184 176.236813)">stato dei modali</text>
+    <text style="font-size: 9.6px; font-family: 'DejaVu Sans'; fill: #0b0b0b" transform="translate(88.38975 188.819563)">toast / conferme</text>
+    <text style="font-size: 9.6px; font-family: 'DejaVu Sans'; fill: #0b0b0b" transform="translate(86.3565 202.156813)">derivazione ruolo</text>
+    <text style="font-size: 9.6px; font-family: 'DejaVu Sans'; fill: #0b0b0b" transform="translate(103.7265 214.186813)">layout JSX</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 9.3px; font-family: 'DejaVu Sans'; fill: #0b0b0b" transform="translate(360.655828 54.975031)">App.jsx</text>
+    <text style="font-size: 9.3px; font-family: 'DejaVu Sans'; fill: #0b0b0b" transform="translate(351.471352 67.530031)">~300 righe</text>
+    <text style="font-size: 9.3px; font-family: 'DejaVu Sans'; fill: #0b0b0b" transform="translate(336.080578 80.085031)">(routing + layout)</text>
+   </g>
+   <g id="text_7">
+    <text style="font-size: 9.3px; font-family: 'DejaVu Sans'; fill: #0b0b0b" transform="translate(484.710563 61.252531)">useVehicles.js</text>
+    <text style="font-size: 9.3px; font-family: 'DejaVu Sans'; fill: #0b0b0b" transform="translate(474.609891 74.161367)">(listener Firestore)</text>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 9.3px; font-family: 'DejaVu Sans'; fill: #0b0b0b" transform="translate(336.575367 138.868531)">useVehicleCrud.js</text>
+    <text style="font-size: 9.3px; font-family: 'DejaVu Sans'; fill: #0b0b0b" transform="translate(318.757875 151.777367)">(scritture + stato modali)</text>
+   </g>
+   <g id="text_9">
+    <text style="font-size: 9.3px; font-family: 'DejaVu Sans'; fill: #0b0b0b" transform="translate(472.28707 139.769469)">NotificationContext</text>
+    <text style="font-size: 9.3px; font-family: 'DejaVu Sans'; fill: #0b0b0b" transform="translate(489.925102 151.772281)">(autonomo)</text>
+   </g>
+   <g id="text_10">
+    <text style="font-size: 9.3px; font-family: 'DejaVu Sans'; fill: #0b0b0b" transform="translate(348.869531 217.303367)">UserContext</text>
+    <text style="font-size: 9.3px; font-family: 'DejaVu Sans'; fill: #0b0b0b" transform="translate(324.836297 229.039531)">(ruolo via onSnapshot)</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p20e71406ee">
+   <rect x="10.8" y="13.681813" width="613.8" height="277.2"/>
+  </clipPath>
+ </defs>
+</svg>

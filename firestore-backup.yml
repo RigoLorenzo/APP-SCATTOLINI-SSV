@@ -1,0 +1,20 @@
+name: Firestore Daily Backup
+on:
+  schedule:
+    - cron: '0 2 * * *'
+  workflow_dispatch:
+jobs:
+  backup:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Authenticate to Google Cloud
+        uses: google-github-actions/auth@v2
+        with:
+          credentials_json: ${{ secrets.GCP_SA_KEY }}
+      - name: Setup gcloud CLI
+        uses: google-github-actions/setup-gcloud@v2
+      - name: Run Firestore Export
+        run: |
+          TIMESTAMP=$(date +%Y%m%d-%H%M%S)
+          gcloud firestore export gs://scattolini-firestore-backup-1/backup-$TIMESTAMP \
+            --project=scattolini-6143a

@@ -1,0 +1,27 @@
+name: Auto-complete Appuntamenti Montaggio Scaduti
+
+on:
+  schedule:
+    - cron: '*/15 * * * *'   # Ogni 15 minuti
+  workflow_dispatch:
+
+jobs:
+  auto-complete:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Auto-complete appuntamenti montaggio scaduti
+        env:
+          FIREBASE_SA_KEY: ${{ secrets.FIREBASE_SA_KEY }}
+        run: node scripts/autoCompleteMontaggiAppuntamenti.js

@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="607.5pt" height="269.496583pt" viewBox="0 0 607.5 269.496583" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-07-05T22:10:15.604754</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.11.0, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 269.496583 
+L 607.5 269.496583 
+L 607.5 0 
+L 0 0 
+z
+" style="fill: #fcfcfb"/>
+  </g>
+  <g id="axes_1">
+   <g id="line2d_1">
+    <path d="M 10.8 181.351022 
+L 596.7 181.351022 
+" clip-path="url(#p0f754cbd04)" style="fill: none; stroke: #e1e0d9; stroke-width: 1.2; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_2">
+    <path d="M 94.5 66.820095 
+L 94.5 50.458534 
+" clip-path="url(#p0f754cbd04)" style="fill: none; stroke: #e34948; stroke-width: 1.3; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_3">
+    <path d="M 199.125 66.820095 
+L 199.125 50.458534 
+" clip-path="url(#p0f754cbd04)" style="fill: none; stroke: #4a3aa7; stroke-width: 1.3; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_4">
+    <path d="M 303.75 66.820095 
+L 303.75 50.458534 
+" clip-path="url(#p0f754cbd04)" style="fill: none; stroke: #898781; stroke-width: 1.3; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_5">
+    <path d="M 408.375 66.820095 
+L 408.375 50.458534 
+" clip-path="url(#p0f754cbd04)" style="fill: none; stroke: #1baf7a; stroke-width: 1.3; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_6">
+    <path d="M 513 66.820095 
+L 513 50.458534 
+" clip-path="url(#p0f754cbd04)" style="fill: none; stroke: #eb6834; stroke-width: 1.3; stroke-linecap: square"/>
+   </g>
+   <g id="patch_2">
+    <path d="M 73.575 181.351022 
+L 115.425 181.351022 
+Q 120.65625 181.351022 120.65625 179.863607 
+L 120.65625 97.712553 
+Q 120.65625 96.225138 115.425 96.225138 
+L 73.575 96.225138 
+Q 68.34375 96.225138 68.34375 97.712553 
+L 68.34375 179.863607 
+Q 68.34375 181.351022 73.575 181.351022 
+z
+" clip-path="url(#p0f754cbd04)" style="fill: #2a78d6"/>
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #0b0b0b" x="94.5" y="86.797702" transform="rotate(-0 94.5 86.797702)">31</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 10.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #52514e" x="94.5" y="199.740464" transform="rotate(-0 94.5 199.740464)">Mar 17-19</text>
+   </g>
+   <g id="patch_3">
+    <path d="M 178.2 181.351022 
+L 220.05 181.351022 
+Q 225.28125 181.351022 225.28125 179.863607 
+L 225.28125 75.744583 
+Q 225.28125 74.257168 220.05 74.257168 
+L 178.2 74.257168 
+Q 172.96875 74.257168 172.96875 75.744583 
+L 172.96875 179.863607 
+Q 172.96875 181.351022 178.2 181.351022 
+z
+" clip-path="url(#p0f754cbd04)" style="fill: #2a78d6"/>
+   </g>
+   <g id="text_3">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #0b0b0b" x="199.125" y="64.829732" transform="rotate(-0 199.125 64.829732)">39</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 10.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #52514e" x="199.125" y="199.740464" transform="rotate(-0 199.125 199.740464)">Mar 25-Apr 2</text>
+   </g>
+   <g id="patch_4">
+    <path d="M 282.825 181.351022 
+L 324.675 181.351022 
+Q 329.90625 181.351022 329.90625 179.863607 
+L 329.90625 166.362459 
+Q 329.90625 164.875045 324.675 164.875045 
+L 282.825 164.875045 
+Q 277.59375 164.875045 277.59375 166.362459 
+L 277.59375 179.863607 
+Q 277.59375 181.351022 282.825 181.351022 
+z
+" clip-path="url(#p0f754cbd04)" style="fill: #2a78d6"/>
+   </g>
+   <g id="text_5">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #0b0b0b" x="303.75" y="155.447608" transform="rotate(-0 303.75 155.447608)">6</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 10.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #52514e" x="303.75" y="199.740464" transform="rotate(-0 303.75 199.740464)">Apr 23-27</text>
+   </g>
+   <g id="patch_5">
+    <path d="M 387.45 181.351022 
+L 429.3 181.351022 
+Q 434.53125 181.351022 434.53125 179.863607 
+L 434.53125 78.490579 
+Q 434.53125 77.003165 429.3 77.003165 
+L 387.45 77.003165 
+Q 382.21875 77.003165 382.21875 78.490579 
+L 382.21875 179.863607 
+Q 382.21875 181.351022 387.45 181.351022 
+z
+" clip-path="url(#p0f754cbd04)" style="fill: #2a78d6"/>
+   </g>
+   <g id="text_7">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #0b0b0b" x="408.375" y="67.575728" transform="rotate(-0 408.375 67.575728)">38</text>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 10.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #52514e" x="408.375" y="199.740464" transform="rotate(-0 408.375 199.740464)">May 18-22</text>
+   </g>
+   <g id="patch_6">
+    <path d="M 492.075 181.351022 
+L 533.925 181.351022 
+Q 539.15625 181.351022 539.15625 179.863607 
+L 539.15625 108.696538 
+Q 539.15625 107.209123 533.925 107.209123 
+L 492.075 107.209123 
+Q 486.84375 107.209123 486.84375 108.696538 
+L 486.84375 179.863607 
+Q 486.84375 181.351022 492.075 181.351022 
+z
+" clip-path="url(#p0f754cbd04)" style="fill: #2a78d6"/>
+   </g>
+   <g id="text_9">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #0b0b0b" x="513" y="97.781687" transform="rotate(-0 513 97.781687)">27</text>
+   </g>
+   <g id="text_10">
+    <text style="font-size: 10.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #52514e" x="513" y="199.741284" transform="rotate(-0 513 199.741284)">Jul 3-5</text>
+   </g>
+   <g id="text_11">
+    <text style="font-size: 9.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #898781" x="10.8" y="227.460876" transform="rotate(-0 10.8 227.460876)">commit per periodo attivo  (141 commit totali, 45 PR unite)</text>
+   </g>
+   <g id="text_12">
+    <text style="font-weight: 700; font-size: 9.3px; font-family: 'DejaVu Sans'; fill: #e34948" transform="translate(45.477375 31.66866)">Messa in sicurezza</text>
+    <text style="font-weight: 700; font-size: 9.3px; font-family: 'DejaVu Sans'; fill: #e34948" transform="translate(58.891172 42.831203)">dati e accessi</text>
+   </g>
+   <g id="text_13">
+    <text style="font-weight: 700; font-size: 9.3px; font-family: 'DejaVu Sans'; fill: #4a3aa7" transform="translate(139.09132 31.66866)">Un solo punto di verità</text>
+    <text style="font-weight: 700; font-size: 9.3px; font-family: 'DejaVu Sans'; fill: #4a3aa7" transform="translate(148.811273 42.831203)">nel codice + regole</text>
+   </g>
+   <g id="text_14">
+    <text style="font-weight: 700; font-size: 9.3px; font-family: 'DejaVu Sans'; fill: #898781" transform="translate(279.2445 31.66866)">Rifiniture</text>
+    <text style="font-weight: 700; font-size: 9.3px; font-family: 'DejaVu Sans'; fill: #898781" transform="translate(270.78368 42.831203)">incrementali</text>
+   </g>
+   <g id="text_15">
+    <text style="font-weight: 700; font-size: 9.3px; font-family: 'DejaVu Sans'; fill: #1baf7a" transform="translate(362.322563 31.66866)">Ruoli su misura +</text>
+    <text style="font-weight: 700; font-size: 9.3px; font-family: 'DejaVu Sans'; fill: #1baf7a" transform="translate(341.460047 42.831203)">migrazione infrastruttura</text>
+   </g>
+   <g id="text_16">
+    <text style="font-weight: 700; font-size: 9.3px; font-family: 'DejaVu Sans'; fill: #eb6834" transform="translate(459.439266 31.66866)">Blindatura backup +</text>
+    <text style="font-weight: 700; font-size: 9.3px; font-family: 'DejaVu Sans'; fill: #eb6834" transform="translate(479.472773 42.831203)">pulizia finale</text>
+   </g>
+   <g id="text_17">
+    <text style="font-weight: 700; font-size: 15px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #0b0b0b" x="10.8" y="22.197656" transform="rotate(-0 10.8 22.197656)">Quattro mesi, cinque impennate</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p0f754cbd04">
+   <rect x="10.8" y="14.760583" width="585.9" height="243.936"/>
+  </clipPath>
+ </defs>
+</svg>
